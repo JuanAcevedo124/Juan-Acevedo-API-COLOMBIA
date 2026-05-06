@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamentos de Colombia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>🗺️ Departamentos de Colombia</h1>
+        <a href="index.html" class="btn-volver">← Volver al menú</a>
+    </header>
+    
+    <main>
+        <div id="loading" class="loading">
+            <p>⏳ Cargando departamentos...</p>
+        </div>
+        
+        <div id="error" class="error hidden"></div>
+        
+        <section id="departamentos-container" class="grid-container"></section>
+        
+        <aside id="contador-regiones" class="contador-regiones">
+            <h3>📊 Departamentos por Región</h3>
+            <div id="regiones-lista"></div>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>Mostrando <span id="total-departamentos">0</span> departamentos</p>
+    </footer>
+    
+    <script src="js/departamentos.js"></script>
+</body>
+</html>

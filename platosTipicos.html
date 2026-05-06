@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platos Típicos de Colombia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>🍽️ Sabores de Colombia</h1>
+        <a href="index.html" class="btn-volver">← Volver al menú</a>
+    </header>
+    
+    <main>
+        <div id="loading" class="loading">
+            <p>⏳ Cargando platos típicos...</p>
+        </div>
+        
+        <div id="error" class="error hidden"></div>
+        
+        <section id="platos-container" class="grid-container"></section>
+        
+        <aside class="contador-platos">
+            <h3>📊 Total de platos</h3>
+            <p id="total-platos">0 platos típicos</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>Datos obtenidos de <a href="https://api-colombia.com/" target="_blank">API Colombia</a></p>
+    </footer>
+    
+    <script src="js/platosTipicos.js"></script>
+</body>
+</html>
