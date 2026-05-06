@@ -51,17 +51,14 @@ Lista de presidentes con nombre, periodo, partido político y fotografía, orden
 ---
 
 ## 📁 Estructura del Proyecto
-/proyecto  
+/Actividad API Colombia  
 │── index.html  
 │── departamentos.html  
 │── platosTipicos.html  
 │── presidentes.html  
-│── /css  
-│── /js  
-│── /assets  
-
----
-
+│── /css/styles.css  
+│── /js/departamentos.js, platosTipicos.js, presidentes.js
+│── README.md
 ## 🔗 Endpoints de la API
 
 | Sección        | Endpoint                                           | Método | Descripción                     |
@@ -70,41 +67,10 @@ Lista de presidentes con nombre, periodo, partido político y fotografía, orden
 | Platos Típicos | https://api-colombia.com/api/v1/TypicalDish      | GET    | Platos gastronómicos           |
 | Presidentes    | https://api-colombia.com/api/v1/President        | GET    | Presidentes históricos         |
 
----
-
-## ✨ Funcionalidades
-- ✅ Consumo dinámico de API  
-- ✅ Manejo de errores  
-- ✅ Estados de carga  
-- ✅ Responsive  
-- ✅ Accesible  
-- ✅ Extras:
-  - Conteo por región  
-  - Orden cronológico  
-  - Filtros  
-
----
-
-## 🔮 Mejoras Futuras
-- Búsqueda en tiempo real  
-- Paginación  
-- Modo oscuro  
-- Mapas  
-- Cache  
-
----
-
-## 🤝 Contribuciones
-git checkout -b feature/NuevaFuncionalidad  
-git commit -m "feat: nueva funcionalidad"  
-git push origin feature/NuevaFuncionalidad  
-
----
-
 ## 👤 Autor
 Juan Acevedo  
-GitHub  
-Correo académico  
+github: JuanAcevedo124
+correo: juanacevedo1240@gmail.com
 
 ---
 
@@ -112,6 +78,3 @@ Correo académico
 Uso educativo. API: api-colombia.com
 
 ---
-
-## 💡 Consejo
-Verifica que no haya errores 404 o CORS en consola.
