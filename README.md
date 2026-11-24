@@ -1,80 +1,55 @@
-# 🇨🇴 Mini Portal de Colombia con API
+# Mini portal de Colombia
 
-## 📌 Descripción
-Portal web informativo sobre Colombia que consume datos de la API pública **api-colombia.com**.  
-El proyecto cumple con los requisitos académicos desarrollando tres secciones independientes conectadas mediante hipervínculos:
+Sitio web que consulta la API pública [api-colombia.com](https://api-colombia.com) y presenta información sobre departamentos, platos típicos y presidentes de Colombia.
 
-### 🗺️ Explorador de Departamentos
-Muestra nombre, región, población, superficie y descripción de los 32 departamentos colombianos.  
-**Extra implementado:** Conteo de departamentos por región.
+**Demo:** https://juanacevedo124.github.io/Juan-Acevedo-API-COLOMBIA/
 
-### 🍽️ Sabores de Colombia
-Galería de platos típicos colombianos con descripción, origen e imagen representativa.  
-**Extra implementado:** Filtro por región gastronómica.
+## Secciones
 
-### 👔 Presidentes de Colombia
-Lista de presidentes con nombre, periodo, partido político y fotografía, ordenados cronológicamente.  
-**Extra implementado:** Ordenamiento por año de inicio de mandato.
+- **Departamentos:** nombre, región, capital, población, superficie y descripción, con conteo por región.
+- **Platos típicos:** galería con imagen, departamento y descripción.
+- **Presidentes:** listado ordenado por periodo de mandato.
 
----
+## Tecnologías
 
-## 🛠️ Tecnologías Usadas
-- **HTML5:** Estructura semántica y accesible  
-- **CSS3:** Diseño responsive con variables CSS, Flexbox y CSS Grid  
-- **JavaScript (ES6+):** Consumo de API con `fetch()`, manipulación dinámica del DOM, manejo de errores con `try/catch` y estados de carga  
-- **API REST:** api-colombia.com (pública, sin autenticación)
+- HTML5 y CSS3 (variables, Flexbox y Grid)
+- JavaScript ES6+: `fetch`, `async/await` y manipulación del DOM
+- Estados de carga y manejo de errores con `try/catch`
 
----
+## Endpoints utilizados
 
-## 🚀 Instrucciones de Uso
+| Sección | Método | Endpoint |
+|---|---|---|
+| Departamentos | GET | `https://api-colombia.com/api/v1/Department` |
+| Platos típicos | GET | `https://api-colombia.com/api/v1/TypicalDish` |
+| Presidentes | GET | `https://api-colombia.com/api/v1/President` |
 
-1. Descarga o clona el repositorio:
-   git clone <URL_DEL_REPOSITORIO>
+## Estructura
 
-2. Entra a la carpeta del proyecto:
-   cd nombre-del-proyecto
+```text
+Juan-Acevedo-API-COLOMBIA/
+├── index.html
+├── departamentos.html
+├── platosTipicos.html
+├── presidentes.html
+├── css/styles.css
+└── js/
+    ├── departamentos.js
+    ├── platosTipicos.js
+    └── presidentes.js
+```
 
-3. Abre `index.html`:
+## Ejecución local
 
-   - Opción A: Doble clic  
-   - Opción B: Live Server en VS Code  
-   - Opción C: Servidor local:
-     npx serve
+```bash
+git clone https://github.com/JuanAcevedo124/Juan-Acevedo-API-COLOMBIA.git
+cd Juan-Acevedo-API-COLOMBIA
+npx serve .
+```
 
-4. Navega por las secciones:
-   - 🗺️ departamentos.html  
-   - 🍽️ platosTipicos.html  
-   - 👔 presidentes.html  
+Se requiere conexión a internet para consultar la API.
 
-⚠️ Nota: Usa servidor local (no file://) por CORS.
+## Autor
 
----
-
-## 📁 Estructura del Proyecto
-/Actividad API Colombia  
-│── index.html  
-│── departamentos.html  
-│── platosTipicos.html  
-│── presidentes.html  
-│── /css/styles.css  
-│── /js/departamentos.js, platosTipicos.js, presidentes.js
-│── README.md
-## 🔗 Endpoints de la API
-
-| Sección        | Endpoint                                           | Método | Descripción                     |
-|----------------|--------------------------------------------------|--------|---------------------------------|
-| Departamentos  | https://api-colombia.com/api/v1/Department       | GET    | Lista de departamentos         |
-| Platos Típicos | https://api-colombia.com/api/v1/TypicalDish      | GET    | Platos gastronómicos           |
-| Presidentes    | https://api-colombia.com/api/v1/President        | GET    | Presidentes históricos         |
-
-## 👤 Autor
-Juan Acevedo  
-github: JuanAcevedo124
-correo: juanacevedo1240@gmail.com
-
----
-
-## 📄 Licencia
-Uso educativo. API: api-colombia.com
-
----
+Juan José Acevedo Morales, desarrollador de software junior.
+[Portafolio](https://juanacevedo124.github.io/Portafolio/) | [GitHub](https://github.com/JuanAcevedo124) | [LinkedIn](https://www.linkedin.com/in/juan-acevedo-b24759450/)
